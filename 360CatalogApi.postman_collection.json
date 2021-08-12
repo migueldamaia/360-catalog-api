@@ -1,0 +1,406 @@
+{
+	"info": {
+		"_postman_id": "bbae46a2-28e7-468a-a481-bfaec632929d",
+		"name": "360CatalogApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Rate",
+			"item": [
+				{
+					"name": "Set Rates",
+					"item": [
+						{
+							"name": "Set Service Rate List",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb28iLCJleHAiOjE2Mjg3MzQ3NDksImlhdCI6MTYyODY5ODc0OX0.0siNVncFlJj3fk8PglHugGbVO1az72GUACPDyDtkFWQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n    {\n        \"id\": 0,\n        \"name\": \"PHOTOGRAPHY_360\",\n        \"serviceRate\": \"1\",\n        \"paymentTerm\": \"One time\"\n    },\n    {\n        \"id\": 1,\n        \"name\": \"HOSTING\",\n        \"serviceRate\": \"1\",\n        \"paymentTerm\": \"per month\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"INTEGRATION\",\n        \"serviceRate\": \"5\",\n        \"paymentTerm\": \"One time\"\n    }\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://catalog-360-funnel-api.herokuapp.com/rate/setServiceRateList",
+									"protocol": "https",
+									"host": [
+										"catalog-360-funnel-api",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rate",
+										"setServiceRateList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Set Location Rate List",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb28iLCJleHAiOjE2Mjg3MzQ3NDksImlhdCI6MTYyODY5ODc0OX0.0siNVncFlJj3fk8PglHugGbVO1az72GUACPDyDtkFWQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n    {\n    \"name\":\"LISBON\",\n    \"locationRate\":\"1\"\n    },\n    {\n    \"name\":\"MADRID\",\n    \"locationRate\":\"2\"\n    },\n    {\n    \"name\":\"LONDON\",\n    \"locationRate\":\"4\"\n    }\n\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://catalog-360-funnel-api.herokuapp.com/rate/setLocationRateList",
+									"protocol": "https",
+									"host": [
+										"catalog-360-funnel-api",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rate",
+										"setLocationRateList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Set Product Quantity Rate List",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb28iLCJleHAiOjE2Mjg3MzQ3NDksImlhdCI6MTYyODY5ODc0OX0.0siNVncFlJj3fk8PglHugGbVO1az72GUACPDyDtkFWQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n    {\n        \"id\": 1,\n        \"quantity\": \"25\",\n        \"quantityRate\": \"50\"\n    },\n    {\n        \"id\": 2,\n        \"quantity\": \"50\",\n        \"quantityRate\": \"48\"\n    },\n    {\n        \"id\": 3,\n        \"quantity\": \"100\",\n        \"quantityRate\": \"45\"\n    },\n    {\n        \"id\": 4,\n        \"quantity\": \"250\",\n        \"quantityRate\": \"35\"\n    },\n    {\n        \"id\": 5,\n        \"quantity\": \"500\",\n        \"quantityRate\": \"25\"\n    }\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://catalog-360-funnel-api.herokuapp.com/rate/setProdQuantRateList",
+									"protocol": "https",
+									"host": [
+										"catalog-360-funnel-api",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rate",
+										"setProdQuantRateList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Set Product Type Rate List",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb28iLCJleHAiOjE2Mjg3MzQ3NDksImlhdCI6MTYyODY5ODc0OX0.0siNVncFlJj3fk8PglHugGbVO1az72GUACPDyDtkFWQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n    {\n    \"name\":\"SHOES\",\n    \"productTypeRate\":\"20\"\n    },\n    {\n    \"name\":\"JEWELERY\",\n    \"productTypeRate\":\"20\"\n    },\n    {\n    \"name\":\"CLOTHING\",\n    \"productTypeRate\":\"20\"\n    },\n    {\n    \"name\":\"CONSUMER GOODS\",\n    \"productTypeRate\":\"20\"\n    },\n    {\n    \"name\":\"REAL ESTATE\",\n    \"productTypeRate\":\"20\"\n    },\n    {\n    \"name\":\"TRANSPORTATION\",\n    \"productTypeRate\":\"20\"\n    }\n    \n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://catalog-360-funnel-api.herokuapp.com/rate/setProdTypeRateList",
+									"protocol": "https",
+									"host": [
+										"catalog-360-funnel-api",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rate",
+										"setProdTypeRateList"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get Rates",
+					"item": [
+						{
+							"name": "Get Service Rates",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb28iLCJleHAiOjE2Mjg3MzU4MzEsImlhdCI6MTYyODY5OTgzMX0.iXbI9tWv2oplqfwPx9y7xi8Im_uWvIrBm-DJJYBpgNE",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://catalog-360-funnel-api.herokuapp.com/rate/listServTypes",
+									"protocol": "https",
+									"host": [
+										"catalog-360-funnel-api",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rate",
+										"listServTypes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Location Rates",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb28iLCJleHAiOjE2Mjg3MzQ3NDksImlhdCI6MTYyODY5ODc0OX0.0siNVncFlJj3fk8PglHugGbVO1az72GUACPDyDtkFWQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://catalog-360-funnel-api.herokuapp.com/rate/getLocationRate",
+									"protocol": "https",
+									"host": [
+										"catalog-360-funnel-api",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rate",
+										"getLocationRate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Product Quantity Rates",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb28iLCJleHAiOjE2Mjg3MzQ3NDksImlhdCI6MTYyODY5ODc0OX0.0siNVncFlJj3fk8PglHugGbVO1az72GUACPDyDtkFWQ",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://catalog-360-funnel-api.herokuapp.com/rate/getProdQuantRate",
+									"protocol": "https",
+									"host": [
+										"catalog-360-funnel-api",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rate",
+										"getProdQuantRate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Product Type Rates Copy",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb28iLCJleHAiOjE2Mjg3MzQ3NDksImlhdCI6MTYyODY5ODc0OX0.0siNVncFlJj3fk8PglHugGbVO1az72GUACPDyDtkFWQ",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://catalog-360-funnel-api.herokuapp.com/rate/getProdTypeRate",
+									"protocol": "https",
+									"host": [
+										"catalog-360-funnel-api",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rate",
+										"getProdTypeRate"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Form",
+					"item": [
+						{
+							"name": "Get Results",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb28iLCJleHAiOjE2Mjg2MzYzOTQsImlhdCI6MTYyODYwMDM5NH0.uJ_3aITVFbWTUiG-VTr4fV5F1DLIHywO7pXhxNY-4Pw",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://catalog-360-funnel-api.herokuapp.com/getResults?id=1",
+									"protocol": "https",
+									"host": [
+										"catalog-360-funnel-api",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"getResults"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Form",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb28iLCJleHAiOjE2Mjc5MzMwNTYsImlhdCI6MTYyNzg5NzA1Nn0.P9s4pYStKBJuy4E8IJdhj8zYBLiRmc8iPq_8jWZU3RI",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"user\":{\n        \"personName\":\"Miguel\",\n        \"businessName\":\"Apple\",\n        \"email\":\"m@a.com\"\n    },\n    \"serviceType\":[{\n        \"name\":\"PHOTOGRAPHY_360\"\n    }],\n\n    \"productType\":{\n        \"name\":\"SHOES\"\n    },\n\n    \"productQuantity\":{\n        \"quantity\":\"25\"\n    },\n    \"location\":{\n        \"name\":\"LISBON\"\n    }\n\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://catalog-360-funnel-api.herokuapp.com/createForm",
+									"protocol": "https",
+									"host": [
+										"catalog-360-funnel-api",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"createForm"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Security",
+					"item": [
+						{
+							"name": "Authentication",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\":\"foo\",\n    \"password\":\"foo\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://catalog-360-funnel-api.herokuapp.com/authenticate",
+									"protocol": "https",
+									"host": [
+										"catalog-360-funnel-api",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"authenticate"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
